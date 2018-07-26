@@ -13,4 +13,10 @@ public class HelloRest {
 	public String hello() {
 		return "Hello World";
 	}
+	
+	@RequestMapping("/welcome")
+	@ResponseBody
+	public String welcome() {
+		return "Welcome";
+	}
 }
